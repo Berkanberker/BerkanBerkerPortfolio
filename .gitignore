@@ -1,0 +1,23 @@
+# .NET Core
+bin/
+obj/
+publish/
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Build artifacts
+BerkanBerkerPortfolio.zip

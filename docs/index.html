@@ -1,0 +1,854 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Berkan BERKER - Bilgisayar Mühendisi | Web Geliştirici | .NET Core Developer">
+    <meta name="keywords" content="Berkan BERKER, Bilgisayar Mühendisi, Web Developer, .NET Core, Portfolio">
+    <title>Berkan BERKER | Bilgisayar Mühendisi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+    <!-- Particles Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-sphere sphere-1"></div>
+        <div class="gradient-sphere sphere-2"></div>
+        <div class="gradient-sphere sphere-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">BB</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active"><span class="nav-emoji">🏠</span> Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link"><span class="nav-emoji">👨‍💻</span> Hakkımda</a></li>
+                <li><a href="#experience" class="nav-link"><span class="nav-emoji">💼</span> Deneyim</a></li>
+                <li><a href="#projects" class="nav-link"><span class="nav-emoji">🚀</span> Projeler</a></li>
+                <li><a href="#skills" class="nav-link"><span class="nav-emoji">⚡</span> Yetenekler</a></li>
+                <li><a href="#contact" class="nav-link"><span class="nav-emoji">📧</span> İletişim</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Merhaba, ben</p>
+                <h1 class="hero-title">
+                    <span class="name-highlight">Berkan</span> BERKER
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Zonguldak Bülent Ecevit Üniversitesi Bilgisayar Mühendisliği mezunu. 
+                    Web geliştirme, .NET Core ve modern yazılım teknolojileri konusunda deneyimli.
+                </p>
+                <!-- Availability Badge -->
+                <div class="availability-badge">
+                    <span class="pulse-dot"></span>
+                    <span>İş tekliflerine açığım</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Projelerimi Gör
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        İletişime Geç
+                    </a>
+                    <a href="cv/Berkan_BERKER_CV.pdf" class="btn btn-outline" download>
+                        <i class="fas fa-download"></i>
+                        CV İndir
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/Berkanberker" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/berkan-berker-8791a8238" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:berkanbrkr@hotmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Code Block Hero -->
+                <div class="code-hero-block">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="code-title">developer.js</span>
+                    </div>
+                    <div class="code-body">
+<pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">"Berkan BERKER"</span>,
+  <span class="property">title</span>: <span class="string">"Bilgisayar Mühendisi"</span>,
+  <span class="property">skills</span>: [
+    <span class="string">"C#"</span>, <span class="string">".NET Core"</span>,
+    <span class="string">"ASP.NET MVC"</span>, <span class="string">"JavaScript"</span>
+  ],
+  <span class="property">passion</span>: <span class="string">"Building awesome apps"</span>,
+  <span class="method">isHireable</span>: () => <span class="boolean">true</span>
+};</code></pre>
+                    </div>
+                </div>
+                <!-- Stats Cards -->
+                <div class="stats-cards">
+                    <div class="stat-card glow-purple">
+                        <span class="stat-icon"><i class="fas fa-briefcase"></i></span>
+                        <span class="stat-number" data-count="2">0</span>
+                        <span class="stat-label">Staj Deneyimi</span>
+                    </div>
+                    <div class="stat-card glow-blue">
+                        <span class="stat-icon"><i class="fas fa-code"></i></span>
+                        <span class="stat-number" data-count="5">0</span>
+                        <span class="stat-label">Proje</span>
+                    </div>
+                    <div class="stat-card glow-pink">
+                        <span class="stat-icon"><i class="fas fa-graduation-cap"></i></span>
+                        <span class="stat-number" data-count="4">0</span>
+                        <span class="stat-label">Yıl Eğitim</span>
+                    </div>
+                    <div class="stat-card glow-green">
+                        <span class="stat-icon"><i class="fas fa-layer-group"></i></span>
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-label">Teknoloji</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Aşağı Kaydır</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hakkımda</span>
+                <h2 class="section-title">Ben Kimim?</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Merhaba, ben <strong>Berkan Berker</strong>. Bilgisayar Mühendisliği lisans eğitimimi 
+                        başarıyla tamamlayarak yazılım dünyasına profesyonel bir adım attım. Eğitim hayatım 
+                        ve bireysel çalışmalarım boyunca odağımı ağırlıklı olarak <strong>.NET ekosistemine</strong> 
+                        çevirdim; C#, ASP.NET Core ve MVC mimarisi kullanarak ölçeklenebilir, güvenli ve 
+                        modern web uygulamaları geliştirme konusunda yetkinlik kazandım.
+                    </p>
+                    <p>
+                        Teorik bilgilerimi pratiğe dökmek adına <strong>MS SQL veritabanı yönetimi</strong>, 
+                        <strong>Entity Framework</strong> ve <strong>RESTful API</strong> entegrasyonları içeren 
+                        çeşitli projelerde aktif rol aldım. Backend geliştirme tutkumu sadece web teknolojileriyle 
+                        sınırlı tutmayıp, <strong>Python</strong> ile veri analizi ve yapay zeka entegrasyonları 
+                        üzerine de çalışmalar yürütüyorum.
+                    </p>
+                    <p>
+                        Ayrıca <strong>Siber Vatan</strong> programı kapsamında 1 yıl boyunca beyaz şapkalı 
+                        hacker teknikleri, <strong>Kali Linux</strong>, web uygulama güvenliği, tersine mühendislik 
+                        ve sızma testi metodolojileri üzerine kapsamlı eğitimler aldım. Teknolojiyi bir 
+                        araçtan ziyade bir <strong>problem çözme sanatı</strong> olarak görüyorum.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Eğitim</h4>
+                                <p>Bilgisayar Mühendisliği<br>Zonguldak Bülent Ecevit Üniversitesi (2021-2025)</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Konum</h4>
+                                <p>Zonguldak, Türkiye</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <h4>Diller</h4>
+                                <p>Türkçe (Ana Dil)<br>İngilizce (B1)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="window-title">berkan.cs</span>
+                        </div>
+                        <div class="window-body">
+<pre><code><span class="keyword">public class</span> <span class="class-name">Berkan</span> : <span class="class-name">Developer</span>
+{
+    <span class="keyword">public string</span> Name => <span class="string">"Berkan BERKER"</span>;
+    <span class="keyword">public string</span> Role => <span class="string">"Bilgisayar Mühendisi"</span>;
+    <span class="keyword">public string[]</span> Skills => <span class="keyword">new</span>[] 
+    {
+        <span class="string">"C#"</span>, <span class="string">".NET Core"</span>, <span class="string">"ASP.NET MVC"</span>,
+        <span class="string">"JavaScript"</span>, <span class="string">"SQL Server"</span>
+    };
+    
+    <span class="keyword">public void</span> <span class="method">BuildAwesomeApps</span>() 
+    {
+        <span class="comment">// Her zaman öğrenmeye devam! 🚀</span>
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Deneyim</span>
+                <h2 class="section-title">Kariyer Yolculuğum</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <span class="year">2025</span>
+                            <span class="period">Staj</span>
+                        </div>
+                        <h3 class="timeline-title">Creavit Türkiye</h3>
+                        <p class="timeline-role">Stajyer - Bilgi İşlem Departmanı</p>
+                        <p class="timeline-description">
+                            ASP.NET MVC mimarisi ile <strong>Online Ticari Otomasyon Sitesi</strong> projesini geliştirdim. 
+                            Personel, ürün, satış, istatistik ve fatura yönetimini kapsayan kapsamlı bir sistem tasarladım.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">ASP.NET MVC</span>
+                            <span class="tag">Entity Framework</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">Bootstrap</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <span class="year">2024</span>
+                            <span class="period">Staj</span>
+                        </div>
+                        <h3 class="timeline-title">Eren Enerji Elektrik Üretim A.Ş.</h3>
+                        <p class="timeline-role">Stajyer - Bilgi İşlem Departmanı</p>
+                        <p class="timeline-description">
+                            Kurumsal ağ yönetimi ve yazılım geliştirme alanlarında deneyim kazandım. 
+                            VLAN konfigürasyonları, fiber optik sonlandırma, Firewall kuralları ve 
+                            MVC mimarisi ile bankacılık uygulaması geliştirdim.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Network</span>
+                            <span class="tag">VLAN</span>
+                            <span class="tag">Firewall</span>
+                            <span class="tag">MVC</span>
+                            <span class="tag">IT Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <span class="year">2022 - 2023</span>
+                            <span class="period">Topluluk</span>
+                        </div>
+                        <h3 class="timeline-title">Google Developer Student Clubs (GDSC)</h3>
+                        <p class="timeline-role">Aktif Üye & Kotlin Eğitmeni</p>
+                        <p class="timeline-description">
+                            GDSC bünyesinde yazılım ekibinde aktif olarak görev aldım ve <strong>Kotlin programlama dili eğitimi</strong> verdim. 
+                            Öğrenci projelerinin geliştirilmesine teknik destek sağladım, <strong>workshop ve hackathonların planlanması</strong> ve 
+                            yürütülmesinde aktif rol aldım. Topluluk üyelerinin teknik becerilerini geliştirmelerine katkı sağlamak için 
+                            <strong>uygulamalı eğitimler ve mentorluk faaliyetleri</strong> gerçekleştirdim.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Android</span>
+                            <span class="tag">Workshop</span>
+                            <span class="tag">Mentorluk</span>
+                            <span class="tag">Takım Çalışması</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <span class="year">2023 - 2024</span>
+                            <span class="period">Sertifika</span>
+                        </div>
+                        <h3 class="timeline-title">Siber Vatan Programı</h3>
+                        <p class="timeline-role">Batı Karadeniz Kalkınma Ajansı</p>
+                        <p class="timeline-description">
+                            1 yıl boyunca alanında uzman eğitmenlerden <strong>beyaz şapkalı hacker teknikleri</strong>, 
+                            <strong>Kali Linux</strong> kullanım pratikleri, <strong>web uygulama güvenliği</strong>, 
+                            <strong>tersine mühendislik</strong> ve <strong>sızma testi metodolojileri</strong> üzerine kapsamlı eğitimler aldım. 
+                            Web uygulamalarında güvenlik açıklarının tespiti, <strong>sistem penetrasyon testleri</strong>, 
+                            <strong>zararlı yazılım analizi</strong> ve <strong>güvenli kod geliştirme pratikleri</strong> üzerinde uygulamalı çalışmalar gerçekleştirdim.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Kali Linux</span>
+                            <span class="tag">Penetration Testing</span>
+                            <span class="tag">Web Security</span>
+                            <span class="tag">Reverse Engineering</span>
+                            <span class="tag">Ethical Hacking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker education">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <span class="year">2021 - 2025</span>
+                            <span class="period">Lisans</span>
+                        </div>
+                        <h3 class="timeline-title">Zonguldak Bülent Ecevit Üniversitesi</h3>
+                        <p class="timeline-role">Bilgisayar Mühendisliği</p>
+                        <p class="timeline-description">
+                            Algoritma ve Veri Yapıları, Nesne Yönelimli Programlama, İşletim Sistemleri, 
+                            Bilgisayar Ağları, Veritabanı Yönetim Sistemleri, Yazılım Mühendisliği dersleri aldım.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Yazılım Mühendisliği</span>
+                            <span class="tag">Veritabanı</span>
+                            <span class="tag">Google Solution Challenge</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Projeler</span>
+                <h2 class="section-title">Çalışmalarım</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- 360° Kampüs Navigasyon Sistemi -->
+                <div class="project-card featured">
+                    <div class="project-status-badge popular">Popüler</div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Berkanberker" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-compass"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Diploma Projesi</div>
+                        <h3 class="project-title">360° Kampüs Navigasyon Sistemi</h3>
+                        <p class="project-description">
+                            Fakülte içi yön bulma ihtiyacını karşılamak amacıyla geliştirilen bu proje, 
+                            360 derece görüntü tabanlı navigasyon sistemi olarak tasarlanmıştır. 
+                            Web uygulaması ASP.NET MVC, mobil uygulama ise React Native kullanılarak geliştirilmiştir.
+                        </p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> 360° Görsel İşleme</span>
+                            <span><i class="fas fa-check"></i> Mobil & Web</span>
+                            <span><i class="fas fa-check"></i> Admin Paneli</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>ASP.NET MVC</span>
+                            <span>React Native</span>
+                            <span>MS SQL</span>
+                            <span>Panolens.js</span>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MVC Online Ticari Otomasyon -->
+                <div class="project-card">
+                    <div class="project-status-badge hot">GitHub'da</div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Berkanberker/MvcOnlineTicariOtomasyon" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Staj Projesi</div>
+                        <h3 class="project-title">MVC Online Ticari Otomasyon</h3>
+                        <p class="project-description">
+                            İşletmelerin cari hesap takibinden stok yönetimine, fatura kesiminden personel takibine 
+                            kadar tüm ihtiyaçları tek çatı altında toplayan kurumsal web uygulaması.
+                        </p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Stok & Ürün Yönetimi</span>
+                            <span><i class="fas fa-check"></i> Fatura Modülü</span>
+                            <span><i class="fas fa-check"></i> Kargo Takibi</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>ASP.NET MVC 5</span>
+                            <span>Entity Framework 6</span>
+                            <span>SQL Server</span>
+                            <span>Bootstrap</span>
+                            <span>SweetAlert2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NetCoreAI Projects -->
+                <div class="project-card">
+                    <div class="project-status-badge new">Yeni</div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Berkanberker/NetCoreAI-Projects" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Yapay Zeka</div>
+                        <h3 class="project-title">NetCoreAI Projeleri</h3>
+                        <p class="project-description">
+                            .NET Core ve Google Gemini API entegrasyonu ile yapay zeka destekli uygulamalar. 
+                            Çok turlu sohbet, akıllı öneri motoru ve görsel analiz özellikleri.
+                        </p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Gemini AI Entegrasyon</span>
+                            <span><i class="fas fa-check"></i> Chatbot</span>
+                            <span><i class="fas fa-check"></i> Öneri Sistemi</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>.NET Core 8/9</span>
+                            <span>Gemini API</span>
+                            <span>N-Tier Architecture</span>
+                            <span>C#</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hava Tahmin Sistemi -->
+                <div class="project-card">
+                    <div class="project-status-badge ai">AI Destekli</div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Berkanberker/Hava-Tahmin-Sistemi" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">AI & Data Analysis</div>
+                        <h3 class="project-title">Hava Tahmin Sistemi</h3>
+                        <p class="project-description">
+                            Zonguldak bölgesi için yapay zeka destekli 44 yıllık tarihsel sinoptik analiz motoru. 
+                            Geçmiş verilere dayalı hava durumu tahmin sistemi.
+                        </p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> 44 Yıllık Data</span>
+                            <span><i class="fas fa-check"></i> AI Analiz</span>
+                            <span><i class="fas fa-check"></i> Sinoptik Motor</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>ASP.NET Core</span>
+                            <span>Machine Learning</span>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WebChangeNotifier -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Berkanberker/WebChangeNotifier" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Otomasyon</div>
+                        <h3 class="project-title">Web Değişiklik Bildiricisi</h3>
+                        <p class="project-description">
+                            Gerçek zamanlı USD kuru takibi yapan ve Telegram üzerinden anlık bildirimler gönderen 
+                            otomatik izleme uygulaması.
+                        </p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Döviz Takibi</span>
+                            <span><i class="fas fa-check"></i> Telegram Bot</span>
+                            <span><i class="fas fa-check"></i> Headless Chrome</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>Selenium</span>
+                            <span>Telegram API</span>
+                            <span>Chrome Driver</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Achievements -->
+            <div class="achievements">
+                <h3 class="achievements-title">
+                    <i class="fas fa-trophy"></i>
+                    Yarışmalar & Etkinlikler
+                </h3>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <h4>Google Solution Challenge</h4>
+                        <p>Nisan 2024</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Siber Güvenlik Start-up Weekend</h4>
+                        <p>Mayıs 2022</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <h4>GDSC Yazılım Ekibi</h4>
+                        <p>2023 - 2024</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <h4>Siber Vatan Programı</h4>
+                        <p>2022 - 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Yetenekler</span>
+                <h2 class="section-title">Teknik Becerilerim</h2>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Programlama Dilleri</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-cuttlefish"></i>
+                            </div>
+                            <span>C#</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span>C / C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-laptop-code"></i> Web Teknolojileri</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-bootstrap"></i>
+                            </div>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <span>ASP.NET Core</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-database"></i> Veritabanı & Araçlar</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <span>Visual Studio</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-shield-alt"></i> Siber Güvenlik</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-linux"></i>
+                            </div>
+                            <span>Kali Linux</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <span>Wireshark</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Soft Skills -->
+            <div class="soft-skills">
+                <h3 class="soft-skills-title">Kişisel Yetenekler</h3>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Yaratıcı Düşünme</h4>
+                        <p>Teknik ve tasarımsal sorunlara yenilikçi çözümler</p>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h4>Problem Çözme</h4>
+                        <p>Karmaşık sistemlerde sistematik analiz</p>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Takım Çalışması</h4>
+                        <p>Farklı disiplinlerle etkin iletişim</p>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>Araştırma & Analiz</h4>
+                        <p>Sistematik inceleme ve uygulama</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">İletişim</span>
+                <h2 class="section-title">Benimle İletişime Geçin</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">
+                        Yeni fırsatlar ve projeler için iletişime geçmekten çekinmeyin. 
+                        En kısa sürede size dönüş yapacağım!
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:berkanbrkr@hotmail.com" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>berkanbrkr@hotmail.com</p>
+                            </div>
+                        </a>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Konum</h4>
+                                <p>Zonguldak, Türkiye</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/Berkanberker" target="_blank" class="contact-social">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/berkan-berker-8791a8238" target="_blank" class="contact-social">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/xzdzkwqv" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="Name" placeholder=" " required>
+                        <label for="name">Adınız</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="Email" placeholder=" " required>
+                        <label for="email">Email Adresiniz</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="Subject" placeholder=" " required>
+                        <label for="subject">Konu</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="Message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Mesajınız</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Mesaj Gönder
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">BB</span>
+                </div>
+                <p class="footer-text">
+                    © 2025 Berkan BERKER. Tüm hakları saklıdır.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://github.com/Berkanberker" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/berkan-berker-8791a8238" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:berkanbrkr@hotmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Yukarı Git">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/site.js"></script>
+</body>
+</html>

@@ -1393,12 +1393,13 @@ a {
     text-align: center;
   }
 
+  /* Hero text should come FIRST on mobile */
   .hero-text {
-    order: 2;
+    order: 1;
   }
 
   .hero-visual {
-    order: 1;
+    order: 2;
   }
 
   .hero-description {
@@ -1431,6 +1432,15 @@ a {
 
   .project-card.featured {
     grid-column: span 1;
+  }
+
+  /* Back to top button - smaller and less intrusive on tablet */
+  .back-to-top {
+    width: 44px;
+    height: 44px;
+    font-size: 16px;
+    bottom: 20px;
+    right: 20px;
   }
 }
 
@@ -1511,11 +1521,11 @@ a {
 
 @media (max-width: 480px) {
   .section {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
   .section-title {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .hero-buttons {
@@ -1547,6 +1557,52 @@ a {
 
   .soft-skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Back to top button - even smaller on mobile */
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    bottom: 15px;
+    right: 15px;
+    opacity: 0.8;
+  }
+
+  /* Timeline - more padding from edge */
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    padding-left: 58px;
+  }
+
+  .timeline-marker {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .timeline-content {
+    padding: 20px;
+  }
+
+  /* Hero improvements */
+  .hero {
+    padding: 70px 16px 50px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .hero-description {
+    font-size: 15px;
   }
 }
 
